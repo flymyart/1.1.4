@@ -8,32 +8,26 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService {
     public void createUsersTable() {
-//        new UserDaoHibernateImpl().createUsersTable();
-        new UserDaoJDBCImpl().createUsersTable();
+        new UserDaoHibernateImpl().createUsersTable();
     }
 
     public void dropUsersTable() {
-//        new UserDaoHibernateImpl().dropUsersTable();
-        new UserDaoJDBCImpl().dropUsersTable();
+        new UserDaoHibernateImpl().dropUsersTable();
     }
 
     public void saveUser(String name, String lastName, byte age) {
-//        new UserDaoHibernateImpl().saveUser(name, lastName, age);
-        new UserDaoJDBCImpl().saveUser(name, lastName, age);
+        new UserDaoHibernateImpl().saveUser(name, lastName, age);
     }
 
     public void removeUserById(long id) {
-//        new UserDaoHibernateImpl().removeUserById(id);
-        new UserDaoJDBCImpl().removeUserById(id);
+        new UserDaoHibernateImpl().removeUserById(id);
     }
 
     public List<User> getAllUsers() {
-//        return new UserDaoHibernateImpl().getAllUsers();
-        return new UserDaoJDBCImpl().getAllUsers();
+        return new UserDaoHibernateImpl().getAllUsers();
     }
 
     public void cleanUsersTable() {
-//        new UserDaoHibernateImpl().cleanUsersTable();
-        new UserDaoJDBCImpl().cleanUsersTable();
+        new UserDaoHibernateImpl().cleanUsersTable();
     }
 }
